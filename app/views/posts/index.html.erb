@@ -1,0 +1,9 @@
+<ul class="posts-list">
+    <% @posts.each do |post| %>
+        <li class="post-item">
+            <h2 class="post-title"><%= link_to post.title, post%></h2>
+            <time datetime="<%= post.created_at.strftime("%Y-%d-%m")%>" class="post-date"><%= post.created_at.strftime("%B, %d, %Y")%></time>
+        </li>
+    <% end %>
+</ul>
+
