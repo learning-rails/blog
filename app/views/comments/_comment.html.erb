@@ -1,7 +1,7 @@
 <li class="b-comment">
     <div class="comment-content">
         <p class="comment-name"><%= comment.name %></p>
-        <p class="comment-body"><%= comment.body %></p>
+        <div class="comment-body"><%= simple_format(comment.body, class: 'paragraph') %></div>
         <p class="comment-time"><%= time_ago_in_words(comment.created_at) %> ago.</p>
     </div>
     <% if user_signed_in? %>
