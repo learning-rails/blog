@@ -1,0 +1,8 @@
+<li class="b-comment">
+    <div class="comment-content">
+        <p class="comment-name"><%= comment.name %></p>
+        <p class="comment-body"><%= comment.body %></p>
+        <p class="comment-time"><%= time_ago_in_words(comment.created_at) %> ago.</p>
+    </div>
+    <%= link_to 'Delete', [comment.post, comment], method: :delete, class: "btn x-delete", data: { confirm: 'Are you sure?' } %>
+</li>
