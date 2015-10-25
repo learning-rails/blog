@@ -26,6 +26,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Flexible authentication solution for Rails with Warden
 gem 'devise', '~> 3.5.2'
 
+#Easy upload management
+gem "paperclip", "~> 4.3"
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

@@ -11,6 +11,9 @@
 <div class="body">
     <%= simple_format(@post.body, class: 'paragraph') %>
 </div>
+<div class="post-images">
+    <%= image_tag @post.image.url(:default) %>
+</div>
 
 
 <div class="b-comments">
